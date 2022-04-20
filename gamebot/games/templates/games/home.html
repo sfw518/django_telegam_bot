@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h1>Список игр</h1>
+    {% for obejct in objects_list %}
+    <p>{{obejct.name}}</p>
+    {% endfor %}
+</div>
+
+{% endblock %}
